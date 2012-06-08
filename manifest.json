@@ -1,0 +1,10 @@
+{
+  "name": "TimThumb Finder",
+  "description": "Open the original TimThumb image",
+  "version": "0.1",
+  "permissions": ["contextMenus","tabs"],
+  "background": {
+    "scripts": ["finder.js"]
+  },
+  "manifest_version": 2
+}
