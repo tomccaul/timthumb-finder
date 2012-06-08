@@ -1,7 +1,7 @@
-var button = chrome.contextMenus.create({"title": "Find timthumb original", "contexts": ["image"], "onclick": finder});
+var button = chrome.contextMenus.create({"title": "Find timthumb original", "contexts": ["image"], "onclick": finder, "targetUrlPatterns":["*://*/*timthumb.php*"]});
 
 function finder(info, tab) {
-  var myRe = /src=([^&]+)/g;  
+  var myRe = /src=([^&]+)/g;
   var urlArray = myRe.exec(info.srcUrl);
 
   // Create new tab
